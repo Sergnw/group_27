@@ -1,0 +1,219 @@
+ 1. Создайте текстоовый файл как в первом ДЗ по Terminal. - cat > home_work_git
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash
+
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON. 
+ === create on website
+ 
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+ === git clone https://github.com/Sergnw/JSON.git  
+ 
+ 6. Внутри локального JSON создать файл “new.json”.
+ === cat > new.json
+ 
+ 7. Добавить файл под гит.
+ === git add new.json
+ 
+ 8. Закоммитить файл.
+ === git commit -m "add new.json"
+ 
+ 9. Отправить файл на внешний GitHub репозиторий.
+ ===git push
+ 
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+ === cat > new.json
+{
+	"name": "Sergey",
+	"surname": "_",
+	"years": "36",
+	"animals": "0",
+	"salary": "1500"
+}
+ 
+ 11. Отправить изменения на внешний репозиторий.
+ === git commit -am "insert data in new.json"
+ === git push
+ === //or we can 
+ === git add new.json
+ === git commit -m "insert data in new.json"
+ === git push
+
+ 12. Создать файл preferences.json
+ === cat > preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна которую хотели бы посетить) в формате JSON.
+ === cat > preferences.json
+ === {"favorite_film": "interstellar",
+ === "favorite_serial": "friends",
+ === "favorite_food": "meat",
+ === "favorite_time_of_the_year": "summer",
+ === "country_visit": "USA"}
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+ === cat > skills.json
+ === {"basic_theory": "what is testing, bug report, documentation, types, methods, testinh directions, etc",
+ === "what_is_architecture": "client-server",
+ === "what_is_http_method": "like are get, head, post, put, etc",
+ === "server response": "1xx, 2xx, 3xx, 4xx, 5xx",
+ === "what_is_sniffing_mobile_trafic": "use program charles-android, fidler-ios",
+ === "bulding_android_apps": "android studio",
+ === "bulding_ios_apps": "xcode",
+ === "bd": "like are sql, postgres, redis"}
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+ === git add . 
+ === //or we can 
+ === git add preferences.json skills.json
+ === git commit -m "insert data in preferences.json and skills.json"
+ === git push
+
+ 16. На веб интерфейсе создать файл bug_report.json. (+)
+ 
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе. (+)
+ 
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+{
+        "ID": "1 A",
+        "Title": "Нажатие кнопки 'каталог' на главной странице не перенаправляет на страницу каталога товаров",
+        "Project": "Сайт онлайн-магазина табака 'Дым&ок'",
+        "Component": "Кнопка Каталог",
+        "version": "ppbb 3.21.18",
+        "Severity": "Critical",
+        "Priority": "High",
+        "Status": "Open",
+        "Author": "Sergey _",
+        "Assigned to": "Mark Polo",
+        "Enviroment":
+        {
+                "OS": "Windows 10 x64 build 19044",
+                "Browser": "Yandex.Browser 22.14"
+        },
+
+        "Steps to Reproduce": 
+        {
+                "1": "Зайти на главную страницу сайта (ссылка_на_сайт)",
+                "2": "Нажать кнопку Каталог"
+        },
+        "Actual result": "Нажатие кнопки Каталог не перенаправляет на страницу каталога",
+        "Expected result": "Нажатие кнопки каталог перенаправляет на страницу каталога",
+        "Attachments": "ссылка на страницу"
+}
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе. (+)
+
+ 20. Синхронизировать внешний и локальный репозиторий JSON (+)
+ === git pull https://github.com/Sergnw/JSON.git 
+ === скачиваем не все компоненты, а только новые 
+ 
+ 
+XML
+ 21. Создать внешний репозиторий c названием XML. (+)
+ 
+ 22. Клонировать репозиторий XML на локальный компьютер.
+ === git clone https://github.com/Sergnw/XML.git
+ 
+ 23. Внутри локального XML создать файл “new.xml”.
+ === touch new.xml
+ 
+ 
+ 24. Добавить файл под гит.
+ === git add new.xml
+ === //or we can 
+ === git add .
+ 
+ 25. Закоммитить файл.
+ === git commit -m "create new.xml"
+ 
+ 
+ 26. Отправить файл на внешний GitHub репозиторий.
+ === git push
+ 
+ 
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+ === cat > new.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<about>
+        <name>Sergey</name>
+        <surname>_</surname>
+        <age>36</age>
+        <animals>0</animals>
+        <salary>1500</salary>
+</about>
+ 
+ 28. Отправить изменения на внешний репозиторий.
+ === git add new.xml
+ === //or we can 
+ === git add .
+ === git commit -m "insert data in new.xml"
+ === git push
+ 
+ 29. Создать файл preferences.xml
+ === touch preferences.xml
+ 
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна которую хотели бы посетить) в формате XML.
+ === cat > preferences.xml
+ <?xml version="1.0" encoding="UTF-8"?>
+<about>
+        <favorite_film>interstellar</favorite_film>
+        <favorite_serial>friends</favorite_serial>
+        <favorite_food>meat</favorite_food>
+        <favorite_time_of_the_year>summer</favorite_time_of_the_year>
+        <country_visit>USA</country_visit>
+</about>
+ 
+ 31. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+ === cat > skills.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<skills>
+<a>theory</a>
+<b>client-server</b>
+<c>http_method</c>
+<d>respondes_code_http</d>
+<e>structure_selects_http</e>
+<f>json</f>
+<g>xml</j>
+<h>testing_api</h>
+<i>snifing</h>
+<j>devtools</h>
+<k>mobile_testing</h>
+<l>etc</h>
+</skills>
+ 
+ 32. Сделать коммит в одну строку.
+ === git add preferences.xml skills.xml
+ === //or we can 
+ === git add .
+ === git commit -m "create and inpute data in preferebces.xml and skills.xml"
+
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+ === git push 
+ 
+ 34. На веб интерфейсе создать файл bug_report.xml. (+)
+ 
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе. (+)
+  
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+<?xml version="1.0" encoding="UTF-8"?>
+<skills>
+<a>ID</a>
+<b>Title-server</b>
+<c>Project</c>
+<d>Component</d>
+<e>version</e>
+<f>Severity</f>
+<g>Priority</g>
+<h>Status</h>
+<i>Author</i>
+<j>Assigned</j>
+<k>Enviroment</k>
+<l>Actual result</l>
+<m>Expected result</m>
+<n>Attachments</n>
+</skills>
+ 
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе. (+)
+ 
+ 38. Синхронизировать внешний и локальный репозиторий XML
+ === git pull https://github.com/Sergnw/XML.git
